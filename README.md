@@ -15,7 +15,6 @@ Simple A/B testing (e.g., comparing raw churn rates) often fails in HR because i
 The survival curve below illustrates the probability of retaining an employee over time. Notice how the gap widens significantly after the first 60 days.
 
 ![Survival Curve](retention_survival_curve.png)
-*(Note: If the chart doesn't load, ensure the image is in the root directory)*
 
 ## 📊 The Business Takeaway
 The analysis proves a statistically significant reduction in 90-day churn ($p < 0.001$). 
