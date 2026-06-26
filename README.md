@@ -7,10 +7,21 @@ In HR technology, product features are often built on "vibes" rather than eviden
 
 ## The Methodology: Survival Analysis
 Simple A/B testing (e.g., comparing raw churn rates) often fails in HR because it ignores *when* an employee leaves. 
-* **The Experiment:** A simulated cohort analysis of 2,000 managers. The treatment group received proactive "Behavioral Nudges," while the control group used standard workflows.
-* **The Math:** I utilized **Kaplan-Meier Survival Analysis** and the **Log-Rank Test** to evaluate time-to-attrition.
+
+* **The Experiment:** A simulated cohort analysis of 2,000 managers over a 12-month period. The treatment group received proactive "Behavioral Nudges," while the control group used standard workflows.
+* **The Math:** I utilized **Kaplan-Meier Survival Analysis** and the **Log-Rank Test** to evaluate time-to-attrition, effectively handling censored data for employees who haven't churned yet.
+
+### Visualizing the Retention Gap
+The survival curve below illustrates the probability of retaining an employee over time. Notice how the gap widens significantly after the first 60 days.
+
+![Survival Curve](retention_survival_curve.png)
+*(Note: If the chart doesn't load, ensure the image is in the root directory)*
 
 ## 📊 The Business Takeaway
 The analysis proves a statistically significant reduction in 90-day churn ($p < 0.001$). 
-* **For Product Strategy:** This moves the feature from a "nice-to-have" to a defensible ROI driver for GTM teams. 
+
+* **For Product Strategy:** This moves the feature from a "nice-to-have" to a defensible ROI driver for Go-To-Market teams. 
 * **For the User:** It proves that empathetic, science-backed management tools yield quantifiable business results.
+
+---
+*Built with Python, Pandas, Matplotlib, and Lifelines.*
